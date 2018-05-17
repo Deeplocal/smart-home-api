@@ -11,11 +11,23 @@
 * Wrench Set
 * Drill
 
+### Bill of Materials
+
+| Part                                                                         | Qty | Total  |
+| -----------------------------------------------------------------------------|:--- | ------:|
+| [Raspberry Pi 3 CanaKit](https://www.amazon.com/gp/product/B01C6EQNNK/)      | 1   | $49.99 |
+| [Extension Cable](https://www.amazon.com/gp/product/B00178HJ6C/)             | 1   | $5.79  |
+| [USB Speakers](https://www.amazon.com/gp/product/B00GHY5F3K/)                | 1   | $12.98 |
+| [Beefcake Relay Kit](https://www.sparkfun.com/products/13815)                | 4   | $31.80 |
+| [Terminal Strip](https://www.amazon.com/gp/product/B01N3AJOYK/)              | 2   | $10.49 |
+
 
 ### Warnings
 This project involves high-voltage wiring (mains 110V). Take appropriate safety precautions when working with mains voltage, and ensure that everything is unplugged before touching electrical connections.
 This project also involves moderately pressurized water.  Use appropriate sealing strategies on all joints, and always leak-test before installing.
 Most importantly - water and electricity can be dangerous in combination. Plan your electrical layout so there is no possibility of leaking water coming in contact with electrical connections. We suggest a basic layout strategy in the instructions, but use care and common sense to keep yourself safe.
+
+
 
 
 ## Building the Planter
