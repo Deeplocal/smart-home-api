@@ -175,7 +175,12 @@ Our upper box holds the lights, relays, speakers, and Raspberry Pi.
   8. On the left navigation menu under DEPLOY, click on Directory Information
   9. Add your app info and click Save
 
-  
+### Step 7: Generate a service-account.json file
+  1. From your actions project dashboard, click the settings cog and select _Permissions_
+  2. In the left hand menu, select _Service Accounts_ and _+Create Service Account_
+  3. Give the account a name, a Role of _Owner_ and have it _Furnish a new private key_
+  4. Click _Save_ and copy the service-account.json file into the provider_server directory of the project
+
 ### Step 6: Tell Google where it should forward provider requests (SYNC, QUERY, EXEC)
   1. Navigate to the [Google Cloud Console API Manager](https://console.developers.google.com/apis)
   2. Enable the [Home Graph API](https://console.cloud.google.com/apis/api/homegraph.googleapis.com/overview)
