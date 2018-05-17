@@ -294,7 +294,7 @@ Note - we mounted all the electronics in the back of the mailbox, and hid them w
 [ close up of wire routing holes ] 
 
  6. Follow the schematic below to connect all of your hall sensors, stepper motor driver, photocell, trim pot and relay.  We recommend soldering everything using the 22AWG wire and perma-proto board.
-[ schematic diagram ] 
+![](diagrams/mailbox_schematic.png)
 [ picture of everything wired in back of mailbox ] 
 
 
