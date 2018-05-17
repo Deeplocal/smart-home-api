@@ -191,7 +191,6 @@ Auth.registerAuth = function (app) {
 
   });
 
-  // app.use('/login', express.static('./views/login.html'));
   app.use('/login', express.static('./frontend/login.html'));
 
   // Post login.
