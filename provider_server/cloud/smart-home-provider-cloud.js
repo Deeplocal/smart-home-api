@@ -24,7 +24,7 @@ const google_ha = require('../smart-home-app');
 const datastore = require('./datastore');
 const authProvider = require('./auth-provider');
 const config = require('./config-provider');
-const DEVICE_INTERFACE = require('../devices-interface').interface;
+const DEVICE_INTERFACE = require('../../devices-interface').interface;
 
 var registeredDevices = {};
 
@@ -36,8 +36,6 @@ if (config.smartHomeProviderApiKey === '<API_KEY>') {
     'Exiting...');
   process.exit();
 }
-
-console.log(DEVICE_INTERFACE.COMMANDS.CHIME)
 
 const app           = express();
 const server        = require('http').Server(app);
@@ -188,7 +186,6 @@ function sendNotification(agentUserId, deviceId, stateObject, options) {
           json: true
         }, function (err, httpResponse, body) {
           console.log(body);
-          console.log('SUCCESS!');
           resolve();
         });
     });
@@ -595,43 +592,32 @@ app.use('/frontend/', express.static('./frontend'));
 app.use('/', express.static('./frontend'));
 
 app.smartHomeSync = function (uid) {
-  // console.log('smartHomeSync');
   let devices = datastore.getStatus(uid, null);
-  // console.log('smartHomeSync devices: ', devices);
   return devices;
 };
 
 app.smartHomePropertiesSync = function (uid) {
-  // console.log('smartHomePropertiesSync');
   let devices = datastore.getProperties(uid, null);
-  // console.log('smartHomePropertiesSync devices: ', devices);
   return devices;
 };
 
 app.smartHomeQuery = function (uid, deviceList) {
-  // console.log('smartHomeQuery deviceList: ', deviceList);
   if (!deviceList || deviceList == {}) {
-    // console.log('using empty device list');
     deviceList = null;
   }
   let devices = datastore.getStatus(uid, deviceList);
-  // console.log('smartHomeQuery devices: ', devices);
   return devices;
 };
 
 app.smartHomeQueryStates = function (uid, deviceList) {
-  // console.log('smartHomeQueryStates deviceList: ', deviceList);
   if (!deviceList || deviceList == {}) {
-    // console.log('using empty device list');
     deviceList = null;
   }
   let devices = datastore.getStates(uid, deviceList);
-  // console.log('smartHomeQueryStates devices: ', devices);
   return devices;
 };
 
 app.smartHomeExec = function (uid, device) {
-  // console.log('smartHomeExec', device);
   datastore.execDevice(uid, device);
   let executedDevice = datastore.getStatus(uid, [device.id]);
   console.log('smartHomeExec executedDevice', JSON.stringify(executedDevice));
@@ -643,15 +629,12 @@ app.changeState = function (command) {
     if (command.type == 'change') {
       for (let deviceId in command.state) {
         const deviceChanges = command.state[deviceId];
-        // console.log('>>> changeState: deviceChanges', deviceChanges);
 
         const connection = deviceConnections[deviceId];
         if (!connection) {
-          // console.log('>>> changeState: connection not found for', deviceId);
           return reject(new Error('Device ' + deviceId + ' unknown to Amce Cloud'));
         }
 
-        // console.log('>>> sending changes to device', deviceId, deviceChanges);
         connection.write('event: change\n');
         connection.write('data: ' + JSON.stringify(deviceChanges) + '\n\n');
       }

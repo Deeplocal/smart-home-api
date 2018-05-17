@@ -15,7 +15,7 @@ const fetch = require('node-fetch');
 const config = require('./cloud/config-provider');
 const datastore = require('./cloud/datastore');
 const authProvider = require('./cloud/auth-provider');
-const DEVICE_INTERFACE = require('./devices-interface').interface;
+const DEVICE_INTERFACE = require('../devices-interface').interface;
 const DEVICES = require('./cloud/devices').DEVICES;
 
 function registerAgent(app, socket, deviceStore) {

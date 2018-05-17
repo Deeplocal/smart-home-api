@@ -1,4 +1,4 @@
-// Copyright 2018, Google, Inc.
+// Copyright 2017, Google, Inc.
 // Licensed under the Apache License, Version 2.0 (the 'License');
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -14,11 +14,9 @@
 var Config = {};
 
 Config.devPortSmartHome = "3000";
-Config.smartHomeProviderGoogleClientId = "ZxjqWpsYj4"; // client id that Google will use
+Config.smartHomeProviderGoogleClientId = "ZxjqWpsYj3"; // client id that Google will use
 Config.smartHomeProvideGoogleClientSecret = "hIMH3uWlMVrqa7FAbKLBoNUMCyLCtv"; // client secret that Google will use
 Config.smartHomeProviderApiKey = "AIzaSyDqGQXGh5fpRrSB-iEvYIFp8WZFtpX8MOI"; // client API Key generated on the console
-Config.firebaseServiceAccountJSONLocation = "./smart-home-sample.json"; // firebase credentials json
-Config.smartHomeFirebaseURL = "https://smart-home-sample-81d46.firebaseio.com"; // firebase real time database url
 Config.isLocal = false;
 Config.enableReset = true; // If true, all devices will be cleared when the frontend page refreshes
 

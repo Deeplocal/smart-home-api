@@ -11,11 +11,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/**
- * This auth is going to use the Authorization Code flow, described in the docs:
- * https://developers.google.com/actions/develop/identity/oauth2-code-flow
- */
-
 const Auth = {};
 const express = require('express');
 const authstore = require('./datastore').Auth;
@@ -118,29 +113,29 @@ SmartHomeModel.getClient = function (clientId, clientSecret) {
 };
 
 SmartHomeModel.getUser = function (username, password) {
-  // console.log('getUser', username);
-  // let userId = authstore.usernames[username];
-  // if (!userId) {
-  //   console.log('not a user', userId);
-  //   SmartHomeModel.genUser(username, password);
-  //   userId = authstore.usernames[username];
-  //   if (!userId) {
-  //     console.log('failed to genUser', userId);
-  //     return false;
-  //   }
-  // }
+  console.log('getUser', username);
+  let userId = authstore.usernames[username];
+  if (!userId) {
+    console.log('not a user', userId);
+    SmartHomeModel.genUser(username, password);
+    userId = authstore.usernames[username];
+    if (!userId) {
+      console.log('failed to genUser', userId);
+      return false;
+    }
+  }
 
-  // let user = authstore.users[userId];
-  // if (!user) {
-  //   console.log('not a user', user);
-  //   return false;
-  // }
-  // if (user.password != password) {
-  //   console.log('passwords do not match!', user);
-  //   return false;
-  // }
+  let user = authstore.users[userId];
+  if (!user) {
+    console.log('not a user', user);
+    return false;
+  }
+  if (user.password != password) {
+    console.log('passwords do not match!', user);
+    return false;
+  }
 
-  return authstore.users['1234'];
+  return user;
 };
 
 Auth.registerAuth = function (app) {
@@ -160,8 +155,11 @@ Auth.registerAuth = function (app) {
     let response_type = req.query.response_type;
     let authCode = req.query.code;
 
-    if ('code' != response_type)
-      return res.status(500).send('response_type ' + response_type + ' must equal "code"');
+    console.log('*********/oauth **********');
+    console.log(req.body);
+
+    // if ('code' != response_type)
+    //   return res.status(500).send('response_type ' + response_type + ' must equal "code"');
 
     if (!authstore.clients[client_id])
       return res.status(500).send('client_id ' + client_id + ' invalid');
@@ -193,11 +191,13 @@ Auth.registerAuth = function (app) {
 
   });
 
+  // app.use('/login', express.static('./views/login.html'));
   app.use('/login', express.static('./frontend/login.html'));
 
   // Post login.
   app.post('/login', function (req, res) {
-    console.log('/login ', req.body);
+    console.log('*********/login **********');
+    console.log(req.body);
     let user = SmartHomeModel.getUser(req.body.username, req.body.password);
     if (!user) {
       console.log('not a user', user);
@@ -217,11 +217,13 @@ Auth.registerAuth = function (app) {
     if (authCode) {
       console.log('authCode successful ', authCode);
       return res.redirect(util.format('%s?code=%s&state=%s',
-        decodeURIComponent(req.body.redirect_uri), authCode, req.body.state));
+        decodeURIComponent("oauth"), authCode, req.body.state));
     } else {
       console.log('authCode failed');
+      // return res.redirect(util.format('%s?client_id=%s&redirect_uri=%s&state=%s&response_type=code',
+      //   path, req.body.client_id, encodeURIComponent(req.body.redirect_uri), req.body.state));
       return res.redirect(util.format('%s?client_id=%s&redirect_uri=%s&state=%s&response_type=code',
-        path, req.body.client_id, encodeURIComponent(req.body.redirect_uri), req.body.state));
+        "oauth", req.body.client_id, encodeURIComponent(req.body.redirect_uri), req.body.state));
     }
   });
 
@@ -242,7 +244,7 @@ Auth.registerAuth = function (app) {
    * &refresh_token=REFRESH_TOKEN
    */
   app.all('/token', function (req, res) {
-    console.log('/token query', req.query);
+    console.log('****************/token query', req.query);
     console.log('/token body', req.body);
     let client_id = req.query.client_id ? req.query.client_id : req.body.client_id;
     let client_secret = req.query.client_secret ? req.query.client_secret : req.body.client_secret;
