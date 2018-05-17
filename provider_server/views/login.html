@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+</head>
+<body>
+  <form action="/login" method="POST" enctype="multipart/form-data">
+    <label>Username</label><br />
+    <input type="text" name="username">
+    <br /><br />
+    <label>Password</label><br />
+    <input type="password" name="password">
+    <br /><br /><br />
+    <button type="submit">Login</button>
+  </form>
+</body>
+<script type="text/javascript">
+  function getUrlParameters () {
+      // Get each parameter
+      let query = window.location.search.substr(1);
+      // Split each parameter into a key-value pair
+      let keyValues = query.split('&');
+      let parameterMap = new Map();
+      for (let i in keyValues) {
+          // Split into <key>=<value>
+          let param = keyValues[i];
+          let splitParam = param.split('=');
+          parameterMap.set(splitParam[0], splitParam[1]);
+      }
+      return parameterMap;
+  }
+  alert(JSON.stringify(getUrlParameters()))
+</script>
+</html>

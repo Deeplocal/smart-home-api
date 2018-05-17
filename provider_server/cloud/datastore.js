@@ -1,4 +1,4 @@
-// Copyright 2018, Google, Inc.
+// Copyright 2017, Google, Inc.
 // Licensed under the Apache License, Version 2.0 (the 'License');
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
@@ -266,6 +266,20 @@ Data.getStates = function (uid, deviceIds = undefined) {
 
 };
 
+/**
+ * get current states for all devices stored for a user
+ *
+ * @param uid
+ * @param deviceIds
+ * @returns
+ * {
+ *   <device id>: {
+ *     <property name>: <property value>,
+ *     <property name>: <property value>
+ *   },
+ *   <device id>: {...},
+ * }
+ */
 Data.getProperties = function (uid, deviceIds = undefined) {
   // console.log('getProperties', uid);
   let properties = {};
@@ -292,6 +306,30 @@ Data.getProperties = function (uid, deviceIds = undefined) {
   return properties;
 };
 
+/**
+ * get a status for the passed in device ids, otherwise get a full status
+ *
+ * @param uid
+ * @param deviceIds (optional)
+ * @returns
+ * {
+ *   uid: <uid>,
+ *   devices: {
+ *     <device id>: {
+ *       properties: {
+ *         <property name>: <property value>,
+ *         <property name>: <property value>
+ *       },
+ *       states: {
+ *         <state name>: <state value>,
+ *         <state name>: <state value>
+ *       }
+ *     },
+ *     <device id>: {...},
+ *     ...
+ *   }
+ * }
+ */
 Data.getStatus = function (uid, deviceIds = undefined) {
   // return Data.getUid(uid);
   if (!Data[uid]) {
@@ -353,6 +391,27 @@ Data.removeUser = function (uid, authToken) {
   Data.version++;
 };
 
+/**
+ * update a device
+ *
+ * @param uid
+ * @param device
+ * {
+ *   states: {
+ *     on: true,
+ *     online: true
+ *      ...
+ *   },
+ *   properties: {
+ *     name: "smart home light 1",
+ *     firmware: "1fzxa84232n4nb6478n8",
+ *     traits: ["onoff"],
+ *     nickname: "kitchen light",
+ *     type: "light",
+ *      ...
+ *   }
+ * }
+ */
 Data.execDevice = function (uid, device) {
   if (!Data[uid]) {
     console.error("cannot register a device without first registering the user!");
@@ -436,12 +495,12 @@ Data.removeDevice = function (uid, device) {
  */
 Data.isValidAuth = function (uid, authToken) {
   return (Data.getUid(uid));
-};
 
-Data.Planter = {
-  light_on: false,
-  light_intensity: 100
-}
+  // FIXME - reenable below once a more stable auth has been put in place
+  // if (!Data.getUid(uid) || !Auth[uid])
+  //     return false;
+  // return (authToken == Auth[uid]);
+};
 
 exports.getUid = Data.getUid;
 exports.getStatus = Data.getStatus;
