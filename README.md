@@ -2,6 +2,8 @@
 
 **Disclaimer:** THESE INSTRUCTIONS ARE BEING PROVIDED FOR INFORMATIONAL PURPOSES ONLY AND ARE NOT INTENDED TO BE USED FOR THE PRODUCTION OF COMMERCIAL PRODUCTS.  BY EXECUTING THESE INSTRUCTIONS, YOU AGREE TO ASSUME ALL LIABILITY IN CONNECTION WITH YOUR BUILDING AND USE OF ANY DEVICE. DEEPLOCAL DISCLAIMS ALL WARRANTIES EXPRESS OR IMPLIED WITH RESPECT TO THESE INSTRUCTIONS AND ANY RESULTING DEVICE INCLUDING BUT NOT LIMITED TO WARRANTIES FOR MERCHANTABILITY, FITNESS FOR ANY PARTICULAR PURPOSE, AND NON-INFRINGEMENT.  YOU SHOULD USE EXTREME CAUTION WHEN BUILDING AND USING ANY DEVICE PURSUANT TO THESE INSTRUCTIONS.  IN NO EVENT SHALL DEEPLOCAL BE LIABLE FOR ANY CLAIM OR DAMAGES, INCLUDING BUT NOT LIMITED TO CLAIMS OR DAMAGES RELATED TO DEATH OR PERSONAL INJURY, PROPERTY DAMAGE, OR PRODUCT LIABILITY.
 
+## What You'll Need
+
 ### Tools Required
 * Soldering Iron + Solder
 * Wire Strippers
@@ -15,6 +17,8 @@ This project involves high-voltage wiring (mains 110V). Take appropriate safety 
 This project also involves moderately pressurized water.  Use appropriate sealing strategies on all joints, and always leak-test before installing.
 Most importantly - water and electricity can be dangerous in combination. Plan your electrical layout so there is no possibility of leaking water coming in contact with electrical connections. We suggest a basic layout strategy in the instructions, but use care and common sense to keep yourself safe.
 
+
+## Building the Planter
 
 ### Step 1 - Water System
 Assemble the misting system according to the following diagram.
@@ -122,7 +126,7 @@ Cut the extension cord in half. Separate the two conductors at the end, and stri
 
 Use the extension cord, terminal strips, and 16AWG wire to connect three of the relays to the light bulb sockets, according to the following wiring diagram:
 
-[ wiring diagram - HV side ] 
+![](diagrams/planter_schematic.png)
 
 Use more 16AWG wire to connect the electric valve to the fourth relay, according to the diagram. Carefully seal any electrical connections that may come in contact with water in case of a leak.
 
@@ -151,12 +155,13 @@ Our upper box holds the lights, relays, speakers, and Raspberry Pi.
 
 [ close-up of upper box internals ] 
 
-### Smart Home Programming Overview: How do we control a mailbox and planter Assistant Services and the Home Graph API?
+## Smart Home Programming Overview: How do we control a mailbox and planter Assistant Services and the Home Graph API?
 * A user adds our custom Smart Home app to their list of Home Control apps in the Google Home app.
 * The user makes a request to a Google Assistant powered device like "Set my planter brightness to 85%".
 * The Home Graph API notifies the Provider Service that a request has been made for planter brightness to be 85%.
 * The Provider Service finds the users planter device (running on a raspberry pi) and sends it an appropriate websocket request.
 * The raspberry pi running the planter set the correct GPIOs to on, triggering the relays that run the lights.
+![](diagrams/smart_home_system.png)
 
 
 ### Step 5: Create an Actions on Google Developer Project
