@@ -1,0 +1,17 @@
+{
+  "name": "@mderrick_dl/planter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ip": "^1.1.5",
+    "pigpio": "^1.0.0",
+    "quick-local-ip": "^1.0.7",
+    "socket.io-client": "^2.1.0"
+  }
+}
