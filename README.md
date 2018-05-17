@@ -50,7 +50,7 @@
 
 ## Planter Assembly
 
-### Step 1 - Water System
+### Step 1: Water System
  1. Assemble the misting system according to the following diagram.
 [ diagram of water plumbing ]
 
@@ -101,7 +101,7 @@
  10. Seal any leaks and test again.
 
 
-### Step 3 -  Electrical Wiring
+### Step 3: Electrical Wiring
 Note - we mounted all the electronics in the top of our planter to keep them high and dry in case of water leaks. 
 
  1. Solder up the relay kits to make 4 complete boards.
@@ -135,7 +135,7 @@ Note - we mounted all the electronics in the top of our planter to keep them hig
 [ picture of speakers, USB and headphone jack connections ] 
 
 
-### Step 4 - Planter Case
+### Step 4: Planter Case
 We built our planter case from two plywood boxes and a welded frame. Design files are attached for these boxes, but feel free to build or design your own.
 [ picture - CAD ]
 [ link to attached files ] 
@@ -202,7 +202,7 @@ We built our planter case from two plywood boxes and a welded frame. Design file
 
 ## Mailbox Assembly
 
-### Step 1 - Door Switch
+### Step 1: Door Switch
  1. Solder three wires to a hall effect sensor with about 50cm length.
 [ picture - hall sensor with soldered wires - use generic NPN transistor as prop ] 
 
@@ -213,7 +213,7 @@ We built our planter case from two plywood boxes and a welded frame. Design file
 [ picture - hall sensor tab ]
 
 
-### Step 2 - Photocell
+### Step 2: Photocell
  1. Drill a hole in the bottom floor of the mailbox, roughly located in the center. Attach the photocell below this hole so that it is facing up into the mailbox. We covered our photocell with a piece of clear acrylic for weatherproofing.
 [ close-up of photocell in bottom of mailbox ] 
 
@@ -221,7 +221,7 @@ We built our planter case from two plywood boxes and a welded frame. Design file
 [ close-up of wires leaving bottom of photocell ] 
 
 
-### Step 3 - LED and Camera
+### Step 3: LED and Camera
  1. Cut two pieces of LED strip about 20cm long.  Solder two 50cm wires to each LED strip.
 [ picture of soldered LED strips on a bench ] 
 
@@ -235,7 +235,7 @@ We built our planter case from two plywood boxes and a welded frame. Design file
 [ close-up of inside roof with LED strips and camera - WITH acrylic pieces ] 
 
 
-### Step 4 - Mailbox Flag
+### Step 4: Mailbox Flag
 Note: our method of mounting the flag is specific to the Deus Modern Waldo mailbox, which is built with an inner and outer shell. We’ll show you how we built our flag, but feel free to adapt this method to suit your mailbox.
 [ CAD cutaway view, labelled ] 
 
@@ -275,7 +275,7 @@ Note: our method of mounting the flag is specific to the Deus Modern Waldo mailb
 [ overall view of belting, pulleys, and hall sensors ]
 
 
-### Step 5 - Electrical Wiring
+### Step 5: Electrical Wiring
 Note - we mounted all the electronics in the back of the mailbox, and hid them with a false wall.
 
  1. Solder up the relay kit to make one complete relay board.
