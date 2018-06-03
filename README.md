@@ -52,36 +52,47 @@
 
 ### Step 1: Water System
  1. Cut a length of the large hose to use as an inlet line, from the water bucket to the intake side of the pump. This side is not pressurized, but feel free to use a hose clamp if desired.
+
 ![](photos/001.jpg)
 
  2. Cut a 6” length of the large hose, and insert the barbed fitting into one end. Slip the other end onto the output side of the pump. Everything from here onwards will be under high pressure, so secure both joints with hose clamps.
+
 ![](photos/002.jpg)
 
  3. Install a push-connect tube fitting into the female threaded end of the barb fitting. Use teflon tape to form a good seal, and tighten with wrenches.
+
 ![](photos/003.jpg)
 
  4. Cut a short length of the plastic tubing. Push one end into the push-connect fitting. Push the other end into the inlet end of the manual shut-off valve. Give each connection a tug to make sure everything is seated well.
+
 ![](photos/004.jpg)
 
  5. Cut another length of tubing, and run it from the manual shut-off valve to the inlet of the water filter.
+
 ![](photos/005.jpg)
 
  6. Cut a length of tubing to run from the water filter to the electric valve. The inlet side of the electric valve is labelled “2”.
+
 ![](photos/006.jpg)
 
  7. Install three push-connect fittings into the brass Tee junction and tighten with wrenches to ensure a good seal.
+
 ![](photos/007.jpg)
 
  8. Run a short length of tubing from the output of the electric valve (labelled “1”) to the tee junction.
+
 ![](photos/008.jpg)
 
  9. Install one push-connect fitting and one thread reducer into a brass elbow junction. Tighten with wrenches to ensure a good seal. Repeat with both elbow junctions.
+
 ![](photos/009.jpg)
 
  10. Thread a mister nozzle into each elbow assembly.
+
 ![](photos/010.jpg)
 
  11. Cut two lengths of tubing, to run from the Tee junction to each nozzle/elbow assembly.
+
 ![](photos/011.jpg)
 
 
@@ -102,32 +113,41 @@
 Note - we mounted all the electronics in the top of our planter to keep them high and dry in case of water leaks.
 
  1. Solder up the relay kits to make 4 complete boards.
+
 ![](photos/012.jpg)
 
  2. Flash the SD card with [Raspbian](https://www.raspberrypi.org/downloads/noobs/), and put it in the Raspberry Pi.
+
 ![](photos/013.jpg)
 
  3. Assemble the plastic case on the Pi.
+
 ![](photos/014.jpg)
 
  4. Mount the Pi and relays. We mounted ours onto the inside of our plywood box, but any location is suitable.
+
 ![](photos/015.jpg)
 
  5. Use the 22AWG wire to connect the Pi’s GPIO pins to the relays according to the following wiring diagram.
+
 ![](diagrams/planter_schematic.png)
 
  6. Test-fit the light bulb sockets in the desired locations.
+
 ![](photos/016.jpg)
 
  7. Cut the extension cord in half. Separate the two conductors at the end, and strip the insulation back ⅛”.
+
 ![](photos/017.jpg)
 
  8. Use the extension cord, terminal strips, and 16AWG wire to connect three of the relays to the light bulb sockets, according to the wiring diagram above.
+
 ![](photos/018.jpg)
 
  9. Use more 16AWG wire to connect the electric valve to the fourth relay, according to the diagram. Carefully seal any electrical connections that may come in contact with water in case of a leak.
 
  10. Finally, install the USB speakers and plug into the Raspberry Pi.
+
 ![](photos/019.jpg)
 
 
@@ -137,13 +157,17 @@ We built our planter case from two plywood boxes and a welded frame. Design file
 [ link to attached files ]
 
  1. Our lower box holds the pump, filter, and valve. It also cradles the three plastic bins.
+
 ![](photos/020.jpg)
 
- 2. We ran our wire cabling through the rear two vertical tubes, and our water piping through the front tubes. The nozzles are mounted in welded fittings on the front tubes.
+ 2. Our upper box holds the lights, relays, speakers, and Raspberry Pi.
+
+![](photos/022.jpg)
+
+ 3. We ran our wire cabling through the rear two vertical tubes, and our water piping through the front tubes. The nozzles are mounted in welded fittings on the front tubes.
+
 ![](photos/021.jpg)
 
- 3. Our upper box holds the lights, relays, speakers, and Raspberry Pi.
-![](photos/022.jpg)
 
 
 
@@ -200,34 +224,43 @@ We built our planter case from two plywood boxes and a welded frame. Design file
 
 ### Step 1: Door Switch
  1. Solder three wires to a hall effect sensor with about 50cm length.
+
 ![](photos/023.jpg)
 
  2. Install a magnet into the door. We drilled a hole and pressed it into our door, next to the magnet that came with the mailbox for holding the door shut.
+
 ![](photos/024.jpg)
 
  3. Attach the hall effect sensor so they come into proximity when the door is closed. We hid the hall effect sensor behind the tab at the opening. The magnet should come within a few mm of the flat side of the hall sensor.
+
 ![](photos/025.jpg)
 
 
 ### Step 2: Photocell
  1. Drill a hole in the bottom floor of the mailbox, roughly located in the center. Attach the photocell below this hole so that it is facing up into the mailbox. We covered our photocell with a piece of clear acrylic for weatherproofing.
+
 ![](photos/026.jpg)
 
  2. Solder two wires to the photocell with about 50cm of length. Route these wires towards the back of the mailbox.
+
 ![](photos/027.jpg)
 
 
 ### Step 3: LED and Camera
  1. Cut two pieces of LED strip about 20cm long.  Solder two 50cm wires to each LED strip.
+
 ![](photos/028.jpg)
 
  2. Prepare the Raspberry Pi Camera by inserting the extension cable and securing it in the connector.
+
 ![](photos/029.jpg)
 
  3. Install the LED strips and camera into the inside of the mailbox roof. We routed a piece of plywood to fit inside the mailbox - design files are attached, but feel free to do it a different way.
+
 ![](photos/030.jpg)
 
  4. Route all wires towards the back of the mailbox. We also cut acrylic covers to fit over the LED strips and camera, but this is optional.
+
 ![](photos/031.jpg)
 
 
@@ -235,38 +268,45 @@ We built our planter case from two plywood boxes and a welded frame. Design file
 Note: our method of mounting the flag is specific to the Deus Modern Waldo mailbox, which is built with an inner and outer shell. We’ll show you how we built our flag, but feel free to adapt this method to suit your mailbox.
 
  1. You’ll need some sort of ¾” diameter shaft to pass through the wall of the mailbox. We turned down a part on the lathe, but this could also be 3D printed. A full CAD model for this part is attached.
+
 ![](photos/032.jpg)
 [ link to CAD model ]
 
  2. You’ll also want to make a flag. We laser-cut ours from acrylic. Design files are attached.
 ![](photos/033.jpg)
+
 [ link to DXF files ]
 
  3. Inside the wall of the mailbox, we laser-cut a large pulley to turn the flag. DXF files are attached. The middle piece is cut from ¼” acrylic, and the other three pieces are cut from 1/16” acrylic.
+
 ![](photos/034.jpg)
 
  4. Test-fit your flag, shaft, bushings, and pulley. We cut a lip into our thrust bushings so they would sit flush and sandwich the side of the mailbox.
+
 ![](photos/035.jpg)
 
  5. Drill a hole in the outer shell of the mailbox where you’d like the pivot. Debur or file any rough edges.
+
 ![](photos/036.jpg)
 
  6. Install the mechanism into the side of the mailbox.
+
 ![](photos/037.jpg)
 
  7. At this point, the flag should turn smoothly within the bushings. Glue two pieces of scrap material to the inside of the wall to create your hard stops.
+
 ![](photos/038.jpg)
 
  8. Drill a hole in the side of the inner shell, towards the back of the mailbox, for your stepper motor shaft. The motor will live inside the mailbox, but the pulleys and belting are between the inner and outer walls.
+
 ![](photos/039.jpg)
 
- 9. Mount your motor and small GT2 pulley so that the pulley is roughly centered between the inner and outer walls.
-![](photos/040.jpg)
+ 9. Run the belting from the small GT2 pulley to the large pulley, and cut to length. Fold over the ends and slot them into the large pulley as shown, and secure with the end plat.
 
- 10. Run the belting from the small GT2 pulley to the large pulley, and cut to length. Fold over the ends and slot them into the large pulley as shown, and secure with the end plat.
 ![](photos/041.jpg)
 
- 11. Add your magnets and hall sensors. We attached our magnets to the belt using 3D printed clips (design files attached), but feel free to use your own method. Limit switches would also be good alternative, and can be integrated with your hard stops.
+ 10. Add your magnets and hall sensors. We attached our magnets to the belt using 3D printed clips (design files attached), but feel free to use your own method. Limit switches would also be good alternative, and can be integrated with your hard stops.
+
 ![](photos/042.jpg)
 
 
@@ -274,21 +314,27 @@ Note: our method of mounting the flag is specific to the Deus Modern Waldo mailb
 Note - we mounted all the electronics in the back of the mailbox, and hid them with a false wall.
 
  1. Solder up the relay kit to make one complete relay board.
+
 ![](photos/043.jpg)
 
  2. Flash the SD card with Raspbian, and put it in the Raspberry Pi. https://www.raspberrypi.org/downloads/noobs/
+
 ![](photos/044.jpg)
 
  3. Assemble the plastic case on the Pi.
+
 ![](photos/045.jpg)
 
  4. Mount the Pi and relay. Here, ours are shown mounted onto the back of the false wall, in the back section of the mailbox.
+
 ![](photos/046.jpg)
 
  5. Drill holes to route all wires into this hidden compartment. Include a hole in the bottom for your two power supplies.
+
 ![](photos/047.jpg)
 
  6. Follow the schematic below to connect all of your hall sensors, stepper motor driver, photocell, trim pot and relay.  We recommend soldering everything using the 22AWG wire and perma-proto board.
+
 ![](diagrams/mailbox_schematic.png)
 
 
