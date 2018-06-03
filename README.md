@@ -233,65 +233,63 @@ We built our planter case from two plywood boxes and a welded frame. Design file
 
 ### Step 4: Mailbox Flag
 Note: our method of mounting the flag is specific to the Deus Modern Waldo mailbox, which is built with an inner and outer shell. We’ll show you how we built our flag, but feel free to adapt this method to suit your mailbox.
-[ CAD cutaway view, labelled ]
 
  1. You’ll need some sort of ¾” diameter shaft to pass through the wall of the mailbox. We turned down a part on the lathe, but this could also be 3D printed. A full CAD model for this part is attached.
-[ close-up of aluminum pivot ]
+![](photos/032.jpg)
 [ link to CAD model ]
 
  2. You’ll also want to make a flag. We laser-cut ours from acrylic. Design files are attached.
-[ flag on bench ]
+![](photos/033.jpg)
 [ link to DXF files ]
 
  3. Inside the wall of the mailbox, we laser-cut a large pulley to turn the flag. DXF files are attached. The middle piece is cut from ¼” acrylic, and the other three pieces are cut from 1/16” acrylic.
-[ pulley on bench ]
+![](photos/034.jpg)
 
  4. Test-fit your flag, shaft, bushings, and pulley. We cut a lip into our thrust bushings so they would sit flush and sandwich the side of the mailbox.
-[ mechanism test-fit, on bench ]
+![](photos/035.jpg)
 
  5. Drill a hole in the outer shell of the mailbox where you’d like the pivot. Debur or file any rough edges.
-[ hole for flag mechanism ]
+![](photos/036.jpg)
 
  6. Install the mechanism into the side of the mailbox.
-[ flag mechanism installed (from outside view) ]
+![](photos/037.jpg)
 
  7. At this point, the flag should turn smoothly within the bushings. Glue two pieces of scrap material to the inside of the wall to create your hard stops.
-[ close-up of hard stops ]
+![](photos/038.jpg)
 
  8. Drill a hole in the side of the inner shell, towards the back of the mailbox, for your stepper motor shaft. The motor will live inside the mailbox, but the pulleys and belting are between the inner and outer walls.
-[ hole for motor shaft ]
+![](photos/039.jpg)
 
  9. Mount your motor and small GT2 pulley so that the pulley is roughly centered between the inner and outer walls.
-[ motor and pulley, from back, between walls ]
+![](photos/040.jpg)
 
- 10. Run the belting from the small GT2 pulley to the large pulley, and cut to length. Fold over the ends and slot them into the large pulley as shown, and secure with the end plate.
-[ close-up of belting in large pulley slots ]
+ 10. Run the belting from the small GT2 pulley to the large pulley, and cut to length. Fold over the ends and slot them into the large pulley as shown, and secure with the end plat.
+![](photos/041.jpg)
 
  11. Add your magnets and hall sensors. We attached our magnets to the belt using 3D printed clips (design files attached), but feel free to use your own method. Limit switches would also be good alternative, and can be integrated with your hard stops.
-[ overall view of belting, pulleys, and hall sensors ]
+![](photos/042.jpg)
 
 
 ### Step 5: Electrical Wiring
 Note - we mounted all the electronics in the back of the mailbox, and hid them with a false wall.
 
  1. Solder up the relay kit to make one complete relay board.
-[ picture - 1x assembled beefcake relay ]
+![](photos/043.jpg)
 
  2. Flash the SD card with Raspbian, and put it in the Raspberry Pi. https://www.raspberrypi.org/downloads/noobs/
-[ close-up of SD card in Pi ]
+![](photos/044.jpg)
 
  3. Assemble the plastic case on the Pi.
-[ picture of Pi in CanaKit case ]
+![](photos/045.jpg)
 
  4. Mount the Pi and relay. Here, ours are shown mounted onto the back of the false wall, in the back section of the mailbox.
-[ picture of mounted Pi and relay ]
+![](photos/046.jpg)
 
  5. Drill holes to route all wires into this hidden compartment. Include a hole in the bottom for your two power supplies.
-[ close up of wire routing holes ]
+![](photos/047.jpg)
 
  6. Follow the schematic below to connect all of your hall sensors, stepper motor driver, photocell, trim pot and relay.  We recommend soldering everything using the 22AWG wire and perma-proto board.
 ![](diagrams/mailbox_schematic.png)
-[ picture of everything wired in back of mailbox ]
 
 
 ## Smart Home Programming Overview: How do we control a mailbox and planter Assistant Services and the Home Graph API?
