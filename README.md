@@ -38,7 +38,7 @@
 | [1/4 NPT female Tee](https://www.mcmaster.com/#50785k72/=1cvaato)               | 1   | $6.00   |
 | [1/4 NPT female Elbow](https://www.mcmaster.com/#50785k36/=1cvbnmo)             | 2   | $8.08   |
 | [#10 to 1/4 NPT female female adapter](https://www.mcmaster.com/#5454k54/=1cvapa1) | 2 | $12.28 |
-| [Nozzles](https://www.amazon.com/gp/product/B01K40RFFI/)                        | 2   | $9.99   |     
+| [Nozzles](https://www.amazon.com/gp/product/B01K40RFFI/)                        | 2   | $9.99   |
 | [Potting Soil / Pebbles](https://www.amazon.com/gp/product/B009LNOZQ2/)         | 1   | $12.19  |
 | [Plastic Bin](https://www.walmart.com/ip/Sterilite-8-Qt-7-6-L-Dishpan-White/45942067) | 3 | $6.00 |
 
@@ -51,41 +51,38 @@
 ## Planter Assembly
 
 ### Step 1: Water System
- 1. Assemble the misting system according to the following diagram.
-[ diagram of water plumbing ]
+ 1. Cut a length of the large hose to use as an inlet line, from the water bucket to the intake side of the pump. This side is not pressurized, but feel free to use a hose clamp if desired.
+![](photos/001.jpg)
 
- 2. Cut a length of the large hose to use as an inlet line, from the water bucket to the intake side of the pump. This side is not pressurized, but feel free to use a hose clamp if desired.
-[ picture of bucket to pump ]
+ 2. Cut a 6” length of the large hose, and insert the barbed fitting into one end. Slip the other end onto the output side of the pump. Everything from here onwards will be under high pressure, so secure both joints with hose clamps.
+![](photos/002.jpg)
 
- 3. Cut a 6” length of the large hose, and insert the barbed fitting into one end. Slip the other end onto the output side of the pump. Everything from here onwards will be under high pressure, so secure both joints with hose clamps.
-[ picture of short hose length]
+ 3. Install a push-connect tube fitting into the female threaded end of the barb fitting. Use teflon tape to form a good seal, and tighten with wrenches.
+![](photos/003.jpg)
 
- 4. Install a push-connect tube fitting into the female threaded end of the barb fitting. Use teflon tape to form a good seal, and tighten with wrenches.
-[ close-up of hose to tubing joint ]
+ 4. Cut a short length of the plastic tubing. Push one end into the push-connect fitting. Push the other end into the inlet end of the manual shut-off valve. Give each connection a tug to make sure everything is seated well.
+![](photos/004.jpg)
 
- 5. Cut a short length of the plastic tubing. Push one end into the push-connect fitting. Push the other end into the inlet end of the manual shut-off valve. Give each connection a tug to make sure everything is seated well.
-[ close-up of tube from hose joint to shut-off valve ]
+ 5. Cut another length of tubing, and run it from the manual shut-off valve to the inlet of the water filter.
+![](photos/005.jpg)
 
- 6. Cut another length of tubing, and run it from the manual shut-off valve to the inlet of the water filter.
-[ picture of tubing from shut-off valve to water filter ]
+ 6. Cut a length of tubing to run from the water filter to the electric valve. The inlet side of the electric valve is labelled “2”.
+![](photos/006.jpg)
 
- 7. Cut a length of tubing to run from the water filter to the electric valve. The inlet side of the electric valve is labelled “2”.
-[ picture of tubing from filter to electric valve ] 
+ 7. Install three push-connect fittings into the brass Tee junction and tighten with wrenches to ensure a good seal.
+![](photos/007.jpg)
 
- 8. Install three push-connect fittings into the brass Tee junction and tighten with wrenches to ensure a good seal.
-[ picture of tee junction with fittings installed ]
+ 8. Run a short length of tubing from the output of the electric valve (labelled “1”) to the tee junction.
+![](photos/008.jpg)
 
- 9. Run a short length of tubing from the output of the electric valve (labelled “1”) to the tee junction.
-[ picture of tubing from valve to tee ]
+ 9. Install one push-connect fitting and one thread reducer into a brass elbow junction. Tighten with wrenches to ensure a good seal. Repeat with both elbow junctions.
+![](photos/009.jpg)
 
- 10. Install one push-connect fitting and one thread reducer into a brass elbow junction. Tighten with wrenches to ensure a good seal. Repeat with both elbow junctions.
-[ picture of two elbow junctions ]
+ 10. Thread a mister nozzle into each elbow assembly.
+![](photos/010.jpg)
 
- 11. Thread a mister nozzle into each elbow assembly.
-[ picture of mister nozzle in elbow assembly ] 
-
- 12. Cut two lengths of tubing, to run from the Tee junction to each nozzle/elbow assembly.
-[ picture of tubing to misters ] 
+ 11. Cut two lengths of tubing, to run from the Tee junction to each nozzle/elbow assembly.
+![](photos/011.jpg)
 
 
 ### Step 2: Priming the Pump
@@ -102,52 +99,51 @@
 
 
 ### Step 3: Electrical Wiring
-Note - we mounted all the electronics in the top of our planter to keep them high and dry in case of water leaks. 
+Note - we mounted all the electronics in the top of our planter to keep them high and dry in case of water leaks.
 
  1. Solder up the relay kits to make 4 complete boards.
-[ picture - 4x assembled relays]
+![](photos/012.jpg)
 
- 2. Flash the SD card with [Raspbian](https://www.raspberrypi.org/downloads/noobs/), and put it in the Raspberry Pi. 
-[ close-up of SD card in Pi ]
+ 2. Flash the SD card with [Raspbian](https://www.raspberrypi.org/downloads/noobs/), and put it in the Raspberry Pi.
+![](photos/013.jpg)
 
  3. Assemble the plastic case on the Pi.
-[ picture of Pi in CanaKit case ]
+![](photos/014.jpg)
 
- 4. Mount the Pi and relays. We mounted ours onto the inside of our plywood box, but any location is suitable. 
-[ picture of mounted Pi and relays ]
+ 4. Mount the Pi and relays. We mounted ours onto the inside of our plywood box, but any location is suitable.
+![](photos/015.jpg)
 
  5. Use the 22AWG wire to connect the Pi’s GPIO pins to the relays according to the following wiring diagram.
-[ wiring diagram - LV side ]
+![](diagrams/planter_schematic.png)
 
  6. Test-fit the light bulb sockets in the desired locations.
-[ close-up of sockets ] 
+![](photos/016.jpg)
 
  7. Cut the extension cord in half. Separate the two conductors at the end, and strip the insulation back ⅛”.
-[ close-up of stripped extension cord ] 
+![](photos/017.jpg)
 
- 8. Use the extension cord, terminal strips, and 16AWG wire to connect three of the relays to the light bulb sockets, according to the following wiring diagram:
-[ wiring diagram - HV side ] 
+ 8. Use the extension cord, terminal strips, and 16AWG wire to connect three of the relays to the light bulb sockets, according to the wiring diagram above.
+![](photos/018.jpg)
 
  9. Use more 16AWG wire to connect the electric valve to the fourth relay, according to the diagram. Carefully seal any electrical connections that may come in contact with water in case of a leak.
-[ wiring diagram - HV side ] 
 
  10. Finally, install the USB speakers and plug into the Raspberry Pi.
-[ picture of speakers, USB and headphone jack connections ] 
+![](photos/019.jpg)
 
 
 ### Step 4: Planter Case
 We built our planter case from two plywood boxes and a welded frame. Design files are attached for these boxes, but feel free to build or design your own.
 [ picture - CAD ]
-[ link to attached files ] 
+[ link to attached files ]
 
  1. Our lower box holds the pump, filter, and valve. It also cradles the three plastic bins.
-[ picture - lower box w/ internals ]
+![](photos/020.jpg)
 
  2. We ran our wire cabling through the rear two vertical tubes, and our water piping through the front tubes. The nozzles are mounted in welded fittings on the front tubes.
-[ close-up of nozzles mounted in frame ]
+![](photos/021.jpg)
 
  3. Our upper box holds the lights, relays, speakers, and Raspberry Pi.
-[ close-up of upper box internals ] 
+![](photos/022.jpg)
 
 
 
@@ -204,72 +200,72 @@ We built our planter case from two plywood boxes and a welded frame. Design file
 
 ### Step 1: Door Switch
  1. Solder three wires to a hall effect sensor with about 50cm length.
-[ picture - hall sensor with soldered wires - use generic NPN transistor as prop ] 
+![](photos/023.jpg)
 
  2. Install a magnet into the door. We drilled a hole and pressed it into our door, next to the magnet that came with the mailbox for holding the door shut.
-[ close-up of magnet in door ] 
+![](photos/024.jpg)
 
- 3. Attach the hall effect sensor so they come into proximity when the door is closed. We hid the hall effect sensor behind the tab at the opening. The magnet should come within a few mm of the flat side of the hall sensor. You could use hot glue or epoxy to fix the sensor in the mailbox, but at this stage, we recommend a temporary method, in case the alignment needs to be adjusted later.
-[ picture - hall sensor tab ]
+ 3. Attach the hall effect sensor so they come into proximity when the door is closed. We hid the hall effect sensor behind the tab at the opening. The magnet should come within a few mm of the flat side of the hall sensor.
+![](photos/025.jpg)
 
 
 ### Step 2: Photocell
  1. Drill a hole in the bottom floor of the mailbox, roughly located in the center. Attach the photocell below this hole so that it is facing up into the mailbox. We covered our photocell with a piece of clear acrylic for weatherproofing.
-[ close-up of photocell in bottom of mailbox ] 
+![](photos/026.jpg)
 
  2. Solder two wires to the photocell with about 50cm of length. Route these wires towards the back of the mailbox.
-[ close-up of wires leaving bottom of photocell ] 
+![](photos/027.jpg)
 
 
 ### Step 3: LED and Camera
  1. Cut two pieces of LED strip about 20cm long.  Solder two 50cm wires to each LED strip.
-[ picture of soldered LED strips on a bench ] 
+![](photos/028.jpg)
 
  2. Prepare the Raspberry Pi Camera by inserting the extension cable and securing it in the connector.
-[ close-up of Pi camera and cable on benchtop ] 
+![](photos/029.jpg)
 
  3. Install the LED strips and camera into the inside of the mailbox roof. We routed a piece of plywood to fit inside the mailbox - design files are attached, but feel free to do it a different way.
-[ close-up of inside roof with LED strips and camera - no acrylic pieces] 
+![](photos/030.jpg)
 
  4. Route all wires towards the back of the mailbox. We also cut acrylic covers to fit over the LED strips and camera, but this is optional.
-[ close-up of inside roof with LED strips and camera - WITH acrylic pieces ] 
+![](photos/031.jpg)
 
 
 ### Step 4: Mailbox Flag
 Note: our method of mounting the flag is specific to the Deus Modern Waldo mailbox, which is built with an inner and outer shell. We’ll show you how we built our flag, but feel free to adapt this method to suit your mailbox.
-[ CAD cutaway view, labelled ] 
+[ CAD cutaway view, labelled ]
 
  1. You’ll need some sort of ¾” diameter shaft to pass through the wall of the mailbox. We turned down a part on the lathe, but this could also be 3D printed. A full CAD model for this part is attached.
-[ close-up of aluminum pivot ] 
-[ link to CAD model ] 
+[ close-up of aluminum pivot ]
+[ link to CAD model ]
 
  2. You’ll also want to make a flag. We laser-cut ours from acrylic. Design files are attached.
-[ flag on bench ] 
-[ link to DXF files ] 
+[ flag on bench ]
+[ link to DXF files ]
 
  3. Inside the wall of the mailbox, we laser-cut a large pulley to turn the flag. DXF files are attached. The middle piece is cut from ¼” acrylic, and the other three pieces are cut from 1/16” acrylic.
-[ pulley on bench ] 
+[ pulley on bench ]
 
  4. Test-fit your flag, shaft, bushings, and pulley. We cut a lip into our thrust bushings so they would sit flush and sandwich the side of the mailbox.
-[ mechanism test-fit, on bench ] 
+[ mechanism test-fit, on bench ]
 
  5. Drill a hole in the outer shell of the mailbox where you’d like the pivot. Debur or file any rough edges.
-[ hole for flag mechanism ] 
+[ hole for flag mechanism ]
 
  6. Install the mechanism into the side of the mailbox.
 [ flag mechanism installed (from outside view) ]
 
  7. At this point, the flag should turn smoothly within the bushings. Glue two pieces of scrap material to the inside of the wall to create your hard stops.
-[ close-up of hard stops ] 
+[ close-up of hard stops ]
 
  8. Drill a hole in the side of the inner shell, towards the back of the mailbox, for your stepper motor shaft. The motor will live inside the mailbox, but the pulleys and belting are between the inner and outer walls.
-[ hole for motor shaft ] 
+[ hole for motor shaft ]
 
- 9. Mount your motor and small GT2 pulley so that the pulley is roughly centered between the inner and outer walls. 
-[ motor and pulley, from back, between walls ] 
+ 9. Mount your motor and small GT2 pulley so that the pulley is roughly centered between the inner and outer walls.
+[ motor and pulley, from back, between walls ]
 
- 10. Run the belting from the small GT2 pulley to the large pulley, and cut to length. Fold over the ends and slot them into the large pulley as shown, and secure with the end plate. 
-[ close-up of belting in large pulley slots ] 
+ 10. Run the belting from the small GT2 pulley to the large pulley, and cut to length. Fold over the ends and slot them into the large pulley as shown, and secure with the end plate.
+[ close-up of belting in large pulley slots ]
 
  11. Add your magnets and hall sensors. We attached our magnets to the belt using 3D printed clips (design files attached), but feel free to use your own method. Limit switches would also be good alternative, and can be integrated with your hard stops.
 [ overall view of belting, pulleys, and hall sensors ]
@@ -279,9 +275,9 @@ Note: our method of mounting the flag is specific to the Deus Modern Waldo mailb
 Note - we mounted all the electronics in the back of the mailbox, and hid them with a false wall.
 
  1. Solder up the relay kit to make one complete relay board.
-[ picture - 1x assembled beefcake relay ] 
+[ picture - 1x assembled beefcake relay ]
 
- 2. Flash the SD card with Raspbian, and put it in the Raspberry Pi. https://www.raspberrypi.org/downloads/noobs/ 
+ 2. Flash the SD card with Raspbian, and put it in the Raspberry Pi. https://www.raspberrypi.org/downloads/noobs/
 [ close-up of SD card in Pi ]
 
  3. Assemble the plastic case on the Pi.
@@ -291,11 +287,11 @@ Note - we mounted all the electronics in the back of the mailbox, and hid them w
 [ picture of mounted Pi and relay ]
 
  5. Drill holes to route all wires into this hidden compartment. Include a hole in the bottom for your two power supplies.
-[ close up of wire routing holes ] 
+[ close up of wire routing holes ]
 
  6. Follow the schematic below to connect all of your hall sensors, stepper motor driver, photocell, trim pot and relay.  We recommend soldering everything using the 22AWG wire and perma-proto board.
 ![](diagrams/mailbox_schematic.png)
-[ picture of everything wired in back of mailbox ] 
+[ picture of everything wired in back of mailbox ]
 
 
 ## Smart Home Programming Overview: How do we control a mailbox and planter Assistant Services and the Home Graph API?
@@ -343,7 +339,7 @@ Note - we mounted all the electronics in the back of the mailbox, and hid them w
   npm install
   npm start
   ```
-  
+
 ### Step 5: Link your devices by responding to a SYNC request
   1. Make sure you're using a device logged in under the same account as the Google Developer Project
   2. In the Google Home app, in the menu, click Home Control
