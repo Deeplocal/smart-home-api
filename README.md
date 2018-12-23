@@ -5,34 +5,18 @@
 <!-- TOC -->
 
 - [Google Smart Home API: Planter and Mailbox](#google-smart-home-api-planter-and-mailbox)
-    - [Building the Planter: What You'll Need](#building-the-planter-what-youll-need)
+    - [Building the Planter](#building-the-planter-what-youll-need)
         - [Tools](#tools)
         - [Materials](#materials)
         - [Warnings](#warnings)
-    - [Planter Assembly](#planter-assembly)
-        - [Step 1: Water System](#step-1-water-system)
-        - [Step 2: Priming the Pump](#step-2-priming-the-pump)
-        - [Step 3: Electrical Wiring](#step-3-electrical-wiring)
-        - [Step 4: Planter Case](#step-4-planter-case)
-    - [Building the Mailbox: What You'll Need](#building-the-mailbox-what-youll-need)
+        - [Planter Assembly](#planter-assembly)
+    - [Building the Mailbox](#building-the-mailbox-what-youll-need)
         - [Tools](#tools-1)
         - [Materials](#materials-1)
         - [Warnings](#warnings-1)
-    - [Mailbox Assembly](#mailbox-assembly)
-        - [Step 1: Door Switch](#step-1-door-switch)
-        - [Step 2: Photocell](#step-2-photocell)
-        - [Step 3: LED and Camera](#step-3-led-and-camera)
-        - [Step 4: Mailbox Flag](#step-4-mailbox-flag)
-        - [Step 5: Electrical Wiring](#step-5-electrical-wiring)
-    - [Smart Home Programming Overview: How do we control a mailbox and planter Assistant Services and the Home Graph API?](#smart-home-programming-overview-how-do-we-control-a-mailbox-and-planter-assistant-services-and-the-home-graph-api)
-        - [Step 1: Create an Actions on Google Developer Project](#step-1-create-an-actions-on-google-developer-project)
-        - [Step 2: Generate a service-account.json file](#step-2-generate-a-service-accountjson-file)
-        - [Step 3: Tell Google where it should forward provider requests (SYNC, QUERY, EXEC)](#step-3-tell-google-where-it-should-forward-provider-requests-sync-query-exec)
-        - [Step 4: Run the server on a public domain](#step-4-run-the-server-on-a-public-domain)
-        - [Step 5: Link your devices by responding to a SYNC request](#step-5-link-your-devices-by-responding-to-a-sync-request)
-        - [Step 6: Configure the mailbox and planter to point at your provider server](#step-6-configure-the-mailbox-and-planter-to-point-at-your-provider-server)
-        - [Step 7: Run a test](#step-7-run-a-test)
-
+        - [Mailbox Assembly](#mailbox-assembly)
+    - [Smart Home Programming](#smart-home-programming-overview-how-do-we-control-a-mailbox-and-planter-assistant-services-and-the-home-graph-api)
+    
 <!-- /TOC -->
 
 ## Building the Planter: What You'll Need
