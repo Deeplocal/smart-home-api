@@ -2,6 +2,20 @@
 
 **Disclaimer:** THESE INSTRUCTIONS ARE BEING PROVIDED FOR INFORMATIONAL PURPOSES ONLY AND ARE NOT INTENDED TO BE USED FOR THE PRODUCTION OF COMMERCIAL PRODUCTS.  BY EXECUTING THESE INSTRUCTIONS, YOU AGREE TO ASSUME ALL LIABILITY IN CONNECTION WITH YOUR BUILDING AND USE OF ANY DEVICE. DEEPLOCAL DISCLAIMS ALL WARRANTIES EXPRESS OR IMPLIED WITH RESPECT TO THESE INSTRUCTIONS AND ANY RESULTING DEVICE INCLUDING BUT NOT LIMITED TO WARRANTIES FOR MERCHANTABILITY, FITNESS FOR ANY PARTICULAR PURPOSE, AND NON-INFRINGEMENT.  YOU SHOULD USE EXTREME CAUTION WHEN BUILDING AND USING ANY DEVICE PURSUANT TO THESE INSTRUCTIONS.  IN NO EVENT SHALL DEEPLOCAL BE LIABLE FOR ANY CLAIM OR DAMAGES, INCLUDING BUT NOT LIMITED TO CLAIMS OR DAMAGES RELATED TO DEATH OR PERSONAL INJURY, PROPERTY DAMAGE, OR PRODUCT LIABILITY.
 
+## Table of Contents
+
+- [Building the Planter](#building-the-planter-what-youll-need)
+  - [Tools](#tools)
+  - [Materials](#materials)
+  - [Warnings](#warnings)
+  - [Planter Assembly](#planter-assembly)
+- [Building the Mailbox](#building-the-mailbox-what-youll-need)
+  - [Tools](#tools-1)
+  - [Materials](#materials-1)
+  - [Warnings](#warnings-1)
+  - [Mailbox Assembly](#mailbox-assembly)
+- [Smart Home Programming](#smart-home-programming-overview-how-do-we-control-a-mailbox-and-planter-assistant-services-and-the-home-graph-api)
+
 ## Building the Planter: What You'll Need
 
 ### Tools
